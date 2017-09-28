@@ -1,0 +1,16 @@
+{
+  "name": "ghurl",
+  "description": "A CLI for fetching data straight from the GitHub API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "ghauth": "^3.2.1",
+    "ghutils": "^3.2.1",
+    "minimist": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "preferGlobal": true
+}
