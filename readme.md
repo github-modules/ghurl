@@ -34,7 +34,7 @@ See all the endpoints at
 The result is JSON to stdout.
 
 You can direct the output to a file for inspection,
-or use [tee](https://en.wikipedia.org/wiki/Tee_(command)) to pipe it to a file 
+or use [`tee`](https://en.wikipedia.org/wiki/Tee_(command)) to pipe it to a file 
 _and_ stdout simultaneously! You can also use [`json`](http://ghub.io/json) to 
 perform operations on the file right in your shell:
 
