@@ -28,6 +28,9 @@ ghurl repos/electron/electron.atom.io/issues
 ghurl "repos/electron/electron.atom.io/issues?state=all"
 ```
 
+See all the endpoints at 
+[developer.github.com/v3/](https://developer.github.com/v3/)
+
 The result is JSON to stdout.
 
 You can direct the output to a file for inspection,
