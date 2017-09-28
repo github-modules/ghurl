@@ -42,6 +42,36 @@ perform operations on the file right in your shell:
 ghurl repos/electron/electron.atom.io/issues | tee issues.json | json -a title
 ```
 
+## Example Use Case
+
+Say you're watching too many GitHub repos and you want to unfollow a bunch
+of them at once. You can do this on the website but it requires a great deal
+of click-click-clicking. 🐁
+
+First, collect the names of all the repos you're watching:
+
+```sh
+ghurl users/zeke/subscriptions | json -a full_name > repos.txt
+```
+
+Then edit the file and delete the repos you want to keep watching:
+
+```
+$EDITOR repos.txt
+```
+
+Then install the [`watch-gh-repos`](https://github.com/RichardLitt/watch-gh-repos) CLI:
+
+```sh
+npm i -g watch-gh-repos
+```
+
+Then unfollow en masse!
+
+```sh
+cat repos.txt | xargs -I repo watch-gh-repos --unwatch repo
+```
+
 ## Dependencies
 
 - [ghauth](https://github.com/rvagg/ghauth): Create and load persistent GitHub authentication tokens for command-line apps
