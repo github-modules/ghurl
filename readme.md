@@ -28,10 +28,18 @@ ghurl repos/electron/electron.atom.io/issues
 ghurl "repos/electron/electron.atom.io/issues?state=all"
 ```
 
-See all the endpoints at 
-[developer.github.com/v3/](https://developer.github.com/v3/)
-
 The result is JSON to stdout.
+
+For a list of all available endpoints you can use the 
+[github-api-endpoints](http:ghub.io/github-api-endpoints)
+module:
+
+```sh
+npm i -g github-api-endpoints && github-api-endpoints | grep GET
+```
+
+...or see all the endpoints at 
+[developer.github.com/v3/](https://developer.github.com/v3/)
 
 You can direct the output to a file for inspection,
 or use [`tee`](https://en.wikipedia.org/wiki/Tee_(command)) to pipe it to a file 
