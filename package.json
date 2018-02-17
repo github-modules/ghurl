@@ -1,7 +1,8 @@
 {
   "name": "ghurl",
   "description": "A CLI for fetching data straight from the GitHub API",
-  "version": "1.0.2",
+  "repository": "https://github.com/zeke/ghurl",
+  "version": "0.0.0-development",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
@@ -13,5 +14,13 @@
   "engines": {
     "node": ">=8"
   },
-  "preferGlobal": true
+  "preferGlobal": true,
+  "scripts": {
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "devDependencies": {
+    "semantic-release": "^12.4.1",
+    "travis-deploy-once": "^4.3.4"
+  }
 }
